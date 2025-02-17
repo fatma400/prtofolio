@@ -246,16 +246,16 @@ h1,h2,h3,h4,h5,h6,p{
     width:98% ;
 }
 .skills-tech .tech .css::after{
-    width:93% ;
+    width:98% ;
 }
 .skills-tech .tech .boot::after{
-    width:90% ;
+    width:95% ;
 }
 .skills-tech .tech .js::after{
-    width:78% ;
+    width:86% ;
 }
 .skills-tech .tech .react::after{
-    width:30% ;
+    width:80% ;
 }
 .text-skills{
     margin-right:90px;
@@ -334,18 +334,18 @@ h1,h2,h3,h4,h5,h6,p{
     color: rgb(66, 64, 64);
 }
 .contact-icons{
-    text-align: center;
+    text-align:center;
 }
 .contact-me a{
-    padding: 25px 20px;
+    padding:15px 10px;
     background-color: #fc819e28;
     border-radius:40px;
     transition: all .3s ease;
-    margin-left: 40px;
+    margin-left: 30px;
     transition: all .4s ease;
 }
 .contact-me i{
-    font-size:22px;
+    font-size:20px;
     color: black;
     line-height: 4;  
     margin-right:7px;
@@ -356,6 +356,14 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .contact-me a:hover i{
     color: #F7418F;
+}
+form textarea{
+    border:none;
+    width: 540px;
+}
+form .btnform{
+    padding: 15px 25px;
+    border-radius: 10px;
 }
 footer{
     text-align: center;
@@ -383,6 +391,9 @@ footer h5{
     .button a{
         padding: 17px 10px;
         margin-right: 1px;
+    }
+    form textarea{
+        width: 440px;
     }
 }
 @media screen and (max-width:800px){
@@ -423,6 +434,9 @@ footer h5{
         padding: 2px 5px;
         font-size:18px;
         margin-left: 5px;
+    }
+    .inputForm input{
+        width: 50%;
     }
 }
 @media screen and (max-width:400px){
@@ -476,6 +490,9 @@ footer h5{
         line-height: 2.5;
         margin-left:10px;
         color: rgb(66, 64, 64);
+    }
+    form textarea{
+        width:200px;
     }
     /*  */
   #submit{
