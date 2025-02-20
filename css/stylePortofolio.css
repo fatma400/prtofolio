@@ -94,6 +94,8 @@ h1,h2,h3,h4,h5,h6,p{
 .define-text{
     margin-top:90px;
     padding-top: 70px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .define-text span{
     color:var(--primarycolor);
@@ -107,7 +109,8 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 2;
 }
 .define-text .machine-text {
-    display: flex;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .definition .spav-icons{
@@ -178,30 +181,11 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 50px 30px;
     background: linear-gradient(to bottom right,rgba(173, 216, 230, 0.418),#fc819e28);
 }
-.about-img img{
-    width:280px;
-}
-.about-img{
-    position: relative;
-    z-index: 1;
-}
-.about-img::before{
-    content: "";
-    position: absolute;
-    border-left: 10px solid #F7418F;
-    border-bottom: 10px solid #F7418F;
-    border-radius: 5rem;
-    top:-15px;
-    left:-25px;
-    width:350px;
-    height:400px;
-    box-shadow: 2px 2px 7px #f7419077;
-    z-index: -1;
-}
+
 .about .about-text{
-    margin-top: 80px;
+    margin-top:10px;
     padding-top: 10px;
-    margin-left: -50px;
+    text-align: center;
 }
 .about .about-text h4{
     line-height: 2.5;
@@ -453,7 +437,6 @@ footer h5{
     .definition .text{
         margin-left:10px;
         text-decoration: underline;
-        font-size:15px;
     }
     .img-myself img{
         width:200px; 
@@ -466,22 +449,10 @@ footer h5{
     .definition .text{
         font-size: 16px;
     }
-    .about-img img{
-        width:160px;
-        margin-left:30px;
-    }
-    .about-img{
-        position: relative;
-        z-index: 1;
-    }
-    .about-img::before{
-        width:260px;
-        height:240px;
-    }
     .about .about-text{
-        margin-top: 80px;
-        padding-top: 10px;
-        margin-left: -50px;
+        margin-top:0;
+        padding-top: 0;
+        text-align: center;
     }
     .about .about-text h4{
         line-height: 2.5;
