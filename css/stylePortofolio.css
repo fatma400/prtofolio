@@ -94,6 +94,8 @@ h1,h2,h3,h4,h5,h6,p{
 .define-text{
     margin-top:90px;
     padding-top: 70px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .define-text span{
     color:var(--primarycolor);
@@ -107,7 +109,8 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 2;
 }
 .define-text .machine-text {
-    display: flex;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .definition .spav-icons{
@@ -178,30 +181,11 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 50px 30px;
     background: linear-gradient(to bottom right,rgba(173, 216, 230, 0.418),#fc819e28);
 }
-.about-img img{
-    width:280px;
-}
-.about-img{
-    position: relative;
-    z-index: 1;
-}
-.about-img::before{
-    content: "";
-    position: absolute;
-    border-left: 10px solid #F7418F;
-    border-bottom: 10px solid #F7418F;
-    border-radius: 5rem;
-    top:-15px;
-    left:-25px;
-    width:350px;
-    height:400px;
-    box-shadow: 2px 2px 7px #f7419077;
-    z-index: -1;
-}
+
 .about .about-text{
-    margin-top: 80px;
+    margin-top:10px;
     padding-top: 10px;
-    margin-left: -50px;
+    text-align: center;
 }
 .about .about-text h4{
     line-height: 2.5;
@@ -246,16 +230,16 @@ h1,h2,h3,h4,h5,h6,p{
     width:98% ;
 }
 .skills-tech .tech .css::after{
-    width:93% ;
+    width:98% ;
 }
 .skills-tech .tech .boot::after{
-    width:90% ;
+    width:95% ;
 }
 .skills-tech .tech .js::after{
-    width:78% ;
+    width:86% ;
 }
 .skills-tech .tech .react::after{
-    width:30% ;
+    width:80% ;
 }
 .text-skills{
     margin-right:90px;
@@ -333,35 +317,37 @@ h1,h2,h3,h4,h5,h6,p{
 .contect .contect-text h4{
     color: rgb(66, 64, 64);
 }
-.contact-input {
-    margin-left: 60px;
+.contact-icons{
+    text-align:center;
 }
-.ttt{
-    display: flex;
-    justify-content: center;
+.contact-me a{
+    padding:15px 10px;
+    background-color: #fc819e28;
+    border-radius:40px;
+    transition: all .3s ease;
+    margin-left: 30px;
+    transition: all .4s ease;
 }
-.contact-input #name,#email,#subject,#message{
-    width: 50%;
-    margin-left:20px;
-    padding-left: 20px;
-    height:40px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    border:1px solid lightslategray;
+.contact-me i{
+    font-size:20px;
+    color: black;
+    line-height: 4;  
+    margin-right:7px;
+    transition: all .4s ease;
 }
-.contact-input #subject{
-    width: 100%;
+.contact-me a:hover{
+    background-color: #FFF3C7;
 }
-#message{
-    width: 100%;
-    height:160px;
+.contact-me a:hover i{
+    color: #F7418F;
 }
-.contact-input .btn-left{
-    text-align: right;
-    margin-bottom: 50px;
+form textarea{
+    border:none;
+    width: 540px;
 }
-.contact-input .btn-left button{
+form .btnform{
     padding: 15px 25px;
+    border-radius: 10px;
 }
 footer{
     text-align: center;
@@ -371,42 +357,6 @@ footer{
 }
 footer img{
     width: 200px;
-}
-.foot-icons span{
-    padding: 20px 20px;
-    background-color: lightblue;
-    border-radius:20px;
-    margin-left:15px;
-    transform: rotate(45deg);
-}
-footer a{
-    margin-left: 50px;
-    position: relative;
-    z-index: 1;
-}
-footer a::after{
-    content: "";
-    position: absolute;
-    padding: 27px 27px;
-    background-color: lightblue;
-    border-radius:20px;
-    transform: rotate(55deg);
-    top:-19px;
-    left:-15px;
-    z-index: -1;  
-    transition: all .3s ease;
-}
-footer a:hover::after{
-    background-color: #f7419094;
-    transform: rotate(360deg);
-}
-footer i{
-    font-size:22px;
-    color: black;
-    line-height: 4;  
-    margin-right:7px;
-    margin-top: 50px;
-    margin-bottom: 30px;
 }
 footer h5{
     margin-top: 30px;
@@ -425,6 +375,9 @@ footer h5{
     .button a{
         padding: 17px 10px;
         margin-right: 1px;
+    }
+    form textarea{
+        width: 440px;
     }
 }
 @media screen and (max-width:800px){
@@ -466,6 +419,9 @@ footer h5{
         font-size:18px;
         margin-left: 5px;
     }
+    .inputForm input{
+        width: 50%;
+    }
 }
 @media screen and (max-width:400px){
     .definition .spav-icons{
@@ -481,7 +437,6 @@ footer h5{
     .definition .text{
         margin-left:10px;
         text-decoration: underline;
-        font-size:15px;
     }
     .img-myself img{
         width:200px; 
@@ -494,22 +449,10 @@ footer h5{
     .definition .text{
         font-size: 16px;
     }
-    .about-img img{
-        width:160px;
-        margin-left:30px;
-    }
-    .about-img{
-        position: relative;
-        z-index: 1;
-    }
-    .about-img::before{
-        width:260px;
-        height:240px;
-    }
     .about .about-text{
-        margin-top: 80px;
-        padding-top: 10px;
-        margin-left: -50px;
+        margin-top:0;
+        padding-top: 0;
+        text-align: center;
     }
     .about .about-text h4{
         line-height: 2.5;
@@ -518,6 +461,9 @@ footer h5{
         line-height: 2.5;
         margin-left:10px;
         color: rgb(66, 64, 64);
+    }
+    form textarea{
+        width:200px;
     }
     /*  */
   #submit{
